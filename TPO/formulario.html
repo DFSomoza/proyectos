@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- kit Font Awesome Account +! -->
+    <script src="https://kit.fontawesome.com/a042f58754.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Mis hojas de Estilo-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Ivette Cosmética</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+            <a href="Index.html#acerca" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Acerca de</a>
+            <a href="Index.html#productos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Productos</a>
+            <a href="catalogo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Catálogo</a>
+            <a href="Index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacto</a>
+            <a href="Index.html#ubicacion" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ubicación</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Mas<i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Mi cuenta</a>
+                    <a href="#registro" class="w3-bar-item w3-button">Registrarse</a>
+                    <!--<a href="#" class="w3-bar-item w3-button">Media</a>-->
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="Index.html#acerca" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Acerca de</a>
+        <a href="Index.html#productos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Productos</a>
+        <a href="catalogo.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Catálogo</a>
+        <a href="Index.html#ubicacion" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Sucursales</a>
+        <a href="#micuenta" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mi cuenta</a>
+    </div>
+    <!-- Section Formulario -->
+    <div class="w3-gray" id="micuenta">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+            <h2 class="w3-wide w3-margin-left">Iniciar Sesión</h2>
+            <p class="w3-opacity w3-center"><i></i></p><br>
+            <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> -->
+            <form action="15.1- show_data.html" class="was-validated" name="myForm">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su email" name="email" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor llene este campo.</div>
+                    <span id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</span>
+                    
+                </div>
+                
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Ingrese su password" name="pswd" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor llene este campo.</div>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                    <label class="form-check-label" for="myCheck">Estoy de acuerdo!</label>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Marque esta casilla de verificación para continuar.</div>
+                    <br>
+                    <div class="mb-3">
+                        <span id="passwordHelpInline" class="form-text">Si no tenés cuenta?.</span>
+                        <a class="btn btn-primary" href="#registro" role="button">Crear cuenta</a>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="align-items: inherit;" onclick="validateForm()">INICIAR SESIÓN</button>
+            </form>
+        </div>
+    </div>
+    <div class="w3-gray" id="registro">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+        <h2 class="w3-wide w3-center">Formulario de Registro</h2>
+        <p class="w3-opacity w3-center"><i>¡Por favor completar todos los campos!</i></p><br>
+        <!-- form action="/action_page.php" class="was-validated"> -->
+        <form action="15.1- show_data.html" target="_blank">
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Ingrese su Nombre aquí..." name="firstname" value="" size="30" maxlength="30" required>
+                <label for="lastname" class="form-label">Apellido/Razón Social</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Ingrese su Apellido/Razón Social aquí..." name="lastname" value="" size="60" maxlength="60" required>
+                <label for="street" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="street" placeholder="Ingrese su Domicilio aquí..." name="street" value="" size="25" maxlength="25">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="tel" placeholder="Ingrese su Número Telefónico aquí..." name="tel" value="" size="20" maxlength="20">
+                <label for="zipcode" class="form-label">C.Postal</label>
+                <input type="text" class="form-control" id="zipcode" placeholder="Ingrese su código postal aquí..." name="zipcode" value="7400" size="8" maxlength="8">
+                <label for="city" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="city" name="city" value="Olavarría" size="30" maxlength="30" required>
+                <label for="documento" class="form-label">CUIT/CUIL/DNI</label>
+                <input type="text" class="form-control" id="documento" placeholder="99-99999999-9" name="documento" value="" size="13" maxlength="13" required>
+                <label for="categoria" class="form-label">Categoría</label><br>
+                <input type="radio" name="categoria" id="particular" value="Particular" checked> Particular
+                <input type="radio" name="categoria" id="mayorista"  value="Mayorista"> Mayorista
+                <input type="radio" name="categoria" id="otros"      value="Otros"> Otros
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" name="email" required>
+                <span id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</span>
+            </div>
+            <div class="mb-3">    
+                <label for="pwd" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese su password" name="pswd" required>
+                <span id="passwordHelpInline" class="form-text">Debe tener entre 8 y 20 caracteres.</span>
+            </div>
+                 
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a class="redsoc" href="https://www.facebook.com/ivettecosmetica" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a class="redsoc" href="https://www.instagram.com/ivettecosmetica/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="#" target="_blank">DFSistemas</a></p>
+    </footer>
+    <script src="JS/data.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/catalogo.js"></script>
+</body>
+</html>

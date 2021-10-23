@@ -1,0 +1,302 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/5 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*Esto es anterior*/
+
+body {font-family: "Lato", sans-serif}
+
+.logo1 {
+    display: inline-flexbox;
+    margin: px, auto;
+    padding: 5px 5px;
+    text-align: left; 
+    z-index: -9999;   
+}
+
+.logo1 img {
+    width: 10%;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 16px, 0;
+}
+
+h6 {
+    background-color: #fad5c7;
+    color: blue;
+    font-size: 10px;
+    padding: 5px;
+    margin: 0 0 16px 0;
+    border-radius: 5px;
+}
+
+#idtabla{
+    padding: 0 10%
+}
+
+table, th, td {
+	border: 1px solid black;
+    padding: auto;
+}
+
+td {
+	text-align: center;
+}
+
+/*
+td,th{
+    padding:  1%;
+}
+
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+header {
+    color: rgb(0, 0, 0);
+    background-color: #fad5c7;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+header li a:hover {
+    color: white;
+}
+
+.logo1 {
+    display: inline-flexbox;
+    margin: 0px, auto;
+    padding: 5px 5px;
+    text-align: left; 
+    z-index: auto;   
+}
+
+.logo1 img {
+    width: 15%;
+}
+
+#dfsresto {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    text-align: right;
+}
+
+.App{
+    color: orange;
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features {
+    background: white;
+    color: #fad5c7;
+}
+
+.feature {
+    width: 24%;
+    display: inline-block;
+    font-size: 16px;
+}
+.feature img{
+    width: 40%;
+}
+
+.quote {
+    background: #fde9e1;
+    color: white;
+}
+
+footer {
+    background: #b69c73;
+    padding: 32px 0;
+    text-align: center;
+    color: #ffae90;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 16px, 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background: #b0b0b0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #468486;
+}
+
+
+
+body {
+    font-family : 'Lato', sans-serif;
+    background : #fff;
+}
+
+/*
+body p {
+    color : #666666;
+    font-family : "Lato", sans-serif;
+    font-size : 14px;
+    letter-spacing : 1px;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    color : #141414;
+    font-family : "Lato", sans-serif;
+    font-size : 18px;
+    text-transform : capitalize;
+    font-weight : 800;
+    text-transform : uppercase;
+}
+
+a:hover {
+    text-decoration : none;
+}
+
+.navbar {
+    padding : 10px 0;
+    transition : background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.top-nav-collapse {
+    padding : 0;
+}
+*/

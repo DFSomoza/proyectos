@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- kit Font Awesome Account +! -->
+     <script src="https://kit.fontawesome.com/a042f58754.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+     <!-- animate.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- Mis hojas de Estilo-->
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="./css/responsive.css">
+     <link rel="stylesheet" href="./css/estilos.css">
+    <title>Ivette Cosmética</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="Index.html" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+            <a href="Index.html#acerca" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Acerca de</a>
+            <a href="Index.html#productos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Productos</a>
+            <a href="catalogo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Catálogo</a>
+            <a href="Index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacto</a>
+            <a href="Index.html#ubicacion" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ubicación</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Mas<i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="formulario.html#micuenta" class="w3-bar-item w3-button">Mi cuenta</a>
+                    <a href="formulario.html#registro" class="w3-bar-item w3-button">Registrarse</a>
+                    <!--<a href="#" class="w3-bar-item w3-button">Media</a>-->
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="Index.html#acerca" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Acerca de</a>
+        <a href="Index.html#productos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Productos</a>
+        <a href="catalogo.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Catálogo</a>
+        <a href="Index.html#ubicacion" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Sucursales</a>
+        <a href="formulario.html#micuenta" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mi cuenta</a>
+    </div>
+    <!-- Section Productos -->
+    <div class="w3-gray" id="productos">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+            <h2 class="w3-wide w3-center">PRODUCTOS</h2>
+            <p class="w3-opacity w3-center"><i>Lista de precios</i></p><br>
+            
+            <div class="col-md-12 col-sm-12">
+                <div id="idtabla">
+                    <table>
+                        
+                    </table>
+                </div>
+            </div>    
+        </div>
+    </div>    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a class="redsoc" href="https://www.facebook.com/ivettecosmetica" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a class="redsoc" href="https://www.instagram.com/ivettecosmetica/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="#" target="_blank">DFSistemas</a></p>
+    </footer>
+    <script src="JS/data.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/catalogo.js"></script>
+</body>
+</html>
